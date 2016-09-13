@@ -6,7 +6,7 @@ src="/disks/jul302015vol/fangfang/amr/maela.sub100"
 tgt="/disks/jul302015vol/fangfang/amr/maela.sub100/counts"
 
 #kmers="10 15 20 25 30"
-kmers="11 12 13 14"
+kmers="10 11"
 dirs="genomes"
 tmpd="/tmp"
 
