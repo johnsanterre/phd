@@ -40,7 +40,7 @@ my @cmd = ('kmc', $fm, "-k$k", "-t$t", "-m$mem", "-ci$ci", "-cs$cs",
 # run(@cmd);
 run(join(" ", @cmd));
 
-run("kmc_dump $out $out.unsorted");
+run("/home/fangfang/bin/kmc_dump $out $out.unsorted");
 run("sort -S 10% --parallel=$t $out.unsorted >$out");
 
 unlink("$out.kmc_suf");
