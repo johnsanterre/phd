@@ -32,7 +32,7 @@ my $out = "$file.k$k"; $out =~ s|.*/||;
 my $in = is_sequence_file($file) ? $file : '@'.$file;
 my $log = ">/dev/null" if $quiet;
 
-my @cmd = ('kmc', $fm, "-k$k", "-t$t", "-m$mem", "-ci$ci", "-cs$cs",
+my @cmd = ('/home/fangfang/bin/kmc', $fm, "-k$k", "-t$t", "-m$mem", "-ci$ci", "-cs$cs",
            $in, $out, $tmp, $log);
 
 # print join(" ", @cmd) . "\n";
