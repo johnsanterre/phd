@@ -41,15 +41,15 @@ my @cmd = ('/home/fangfang/bin/kmc', $fm, "-k$k", "-t$t", "-m$mem", "-ci$ci", "-
 run(join(" ", @cmd));
 
 run("/home/fangfang/bin/kmc_dump $out $out.unsorted");
-run("sort -S 10% --parallel=$t $out.unsorted >$out");
+run("/home/fangfang/bin/sort -S 10% --parallel=$t $out.unsorted >$out");
 
-unlink("$out.kmc_suf");
-unlink("$out.kmc_pre");
+# unlink("$out.kmc_suf");
+# unlink("$out.kmc_pre");
 unlink("$out.unsorted");
 
 sub is_sequence_file {
     my ($file) = @_;
-    return 1 if $file =~ /(fasta|fa|fastq|fq)(\.gz|)?$/;
+    return 1 if $file =~ /(fasta|fa|fna|fastq|fq)(\.gz|)?$/;
 }
 
 sub run { system(@_) == 0 or confess("FAILED: ". join(" ", @_)); }
