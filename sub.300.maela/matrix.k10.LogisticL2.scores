@@ -1,0 +1,15 @@
+accuracy_score  = 0.89500
+f1_score        = 0.89655
+precision_score = 0.88350
+recall_score    = 0.91000
+log_loss        = 3.62662
+roc_auc_score   = 0.95355
+avg_test_score  = 0.89500
+avg_train_score = 1.00000
+
+Model:
+LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr',
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0)
+
