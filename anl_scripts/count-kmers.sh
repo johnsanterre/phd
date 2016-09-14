@@ -1,7 +1,6 @@
 #! /bin/zsh
 
 setopt shwordsplit
-
 src="/homes/jsanterre/data/raw/amr/Mycobacterium/kanamycin/"
 tgt="/homes/jsanterre/data/raw/amr/Mycobacterium/kanamycin/counts"
 
