@@ -2,13 +2,12 @@
 
 setopt shwordsplit
 
-src="/disks/jul302015vol/fangfang/amr/maela.sub100"
-tgt="/disks/jul302015vol/fangfang/amr/maela.sub100/counts"
+src="/homes/jsanterre/data/raw/amr/Mycobacterium/kanamycin/"
+tgt="/homes/jsanterre/data/raw/amr/Mycobacterium/kanamycin/counts"
 
-#kmers="10 15 20 25 30"
-kmers="10 11"
-dirs="genomes"
-tmpd="/tmp"
+kmers="10 "
+dirs="All"
+tmpd="/homes/jsanterre/data/raw/amr/Mycobacterium/kanamycin/tmp"
 
 for k in $kmers; do
     for d in $dirs; do
