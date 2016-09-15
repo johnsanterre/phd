@@ -13,6 +13,6 @@ for k in $kmers; do
         dd="$tgt/$d/k$k"
         echo $dd $k
         mkdir -p $dd
-        pushd $dd; ls $src/$d/* | parallel -j 1 "kc.pl -fm -fa -tmp $tmpd -k $k {}"; popd
+        pushd $dd; ls $src/$d/* | parallel -j 1 "perl /homes/jsanterre/phd/anl_scripts/kc.pl -fm -tmp $tmpd -k $k {}"; popd
     done
 done
