@@ -4,9 +4,9 @@ setopt shwordsplit
 src="/homes/jsanterre/data/raw/amr/Mycobacterium/kanamycin/"
 tgt="/homes/jsanterre/data/raw/amr/Mycobacterium/kanamycin/counts"
 
-kmers="10 "
+kmers="20 "
 dirs="All"
-tmpd="/homes/jsanterre/data/raw/amr/Mycobacterium/kanamycin/tmp"
+tmpd="/homes/jsanterre/data/raw/amr/Mycobacterium/kanamycin/tmp2"
 
 for k in $kmers; do
     for d in $dirs; do
