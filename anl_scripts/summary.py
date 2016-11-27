@@ -28,3 +28,10 @@ for f_loc in ['k10.npy','k11.npy','k12.npy','k13.npy','k14.npy','k15.npy','k16.n
   print "******"
 
 np.save('results.npy', results) 
+
+numFeat =  [results[f]['num_features'] for f in f_locs]
+sparsity = [1-results[f]['sparsity'] for f in f_locs]
+number_of_ones= [1-results[f]['cnt_ones'] for f in f_locs]
+counts = [ [results[f]['counts'].keys(),  results[f]['counts'].values()] for f in f_locs]
+unique_features = [ results[f]['num_unique_feature_columns'] for f in f_locs]
+size = [ results[f]['size_on_HD'] for f in f_locs]
