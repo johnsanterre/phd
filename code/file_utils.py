@@ -1,4 +1,14 @@
 import os.path
+import csv
+
+def get_labels(name, directory = '../../'):
+  ret = []
+  file_name = directory + name
+  if os.path.exists(file_name):
+    with open(file_name, 'rb') as csvfile:
+       data = csv.reader(csvfile, delimiter=' ')
+       ret = [d for d in data]
+    return ret
 
 def make_file_names(name, directory='../../'):
   ret = []
