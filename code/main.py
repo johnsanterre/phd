@@ -5,7 +5,7 @@ import file_utils
 def main(args):
   """Runs!"""
   files = file_utils.make_file_names(args.bacteria_name)
-  print files
+
 def parse_args():
   """ Parses command-line argument. """
   parser = argparse.ArgumentParser(
