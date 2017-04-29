@@ -1,12 +1,12 @@
 #! /bin/zsh
 
 setopt shwordsplit
-src="/homes/jsanterre/data/raw/amr/Mycobacterium/kanamycin/"
-tgt="/homes/jsanterre/data/raw/amr/Mycobacterium/kanamycin/counts"
+src="/homes/jsanterre/data/raw/amr/Mycobacterium/isoniazid"
+tgt="/homes/jsanterre/data/raw/amr/Mycobacterium/isoniazid/counts"
 
-kmers="20 "
+kmers="17 18 19 20"
 dirs="All"
-tmpd="/homes/jsanterre/data/raw/amr/Mycobacterium/kanamycin/tmp2"
+tmpd="/homes/jsanterre/data/raw/amr/Mycobacterium/isoniazid/tmp"
 
 for k in $kmers; do
     for d in $dirs; do

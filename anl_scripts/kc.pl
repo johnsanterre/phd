@@ -14,7 +14,6 @@ GetOptions("h|help" => \$help,
           ) or die("Error in command line arguments\n");
 
 $help and die $usage;
-
 my $file = shift @ARGV or die $usage;
 
 $ci  ||= 1;
@@ -39,10 +38,8 @@ my @cmd = ('/home/fangfang/bin/kmc', $fm, "-k$k", "-t$t", "-m$mem", "-ci$ci", "-
 
 # run(@cmd);
 run(join(" ", @cmd));
-
 run("/home/fangfang/bin/kmc_dump $out $out.unsorted");
 run("/home/fangfang/bin/sort -S 10% --parallel=$t $out.unsorted >$out");
-
 # unlink("$out.kmc_suf");
 # unlink("$out.kmc_pre");
 unlink("$out.unsorted");
